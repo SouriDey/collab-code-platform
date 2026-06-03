@@ -32,7 +32,7 @@ function CodeEditor() {
   useEffect(() => {
     const loadSavedCode = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/rooms/${roomId}/code`);
+        const res = await fetch(`http://https://collab-code-platform-y9nt.onrender.com/api/rooms/${roomId}/code`);
         const data = await res.json();
 
         if (res.ok) {
@@ -97,7 +97,7 @@ function CodeEditor() {
     try {
       setSaveStatus("Saving...");
 
-      await fetch(`http://localhost:5000/api/rooms/${roomId}/code`, {
+      await fetch(`http://https://collab-code-platform-y9nt.onrender.com/api/rooms/${roomId}/code`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
