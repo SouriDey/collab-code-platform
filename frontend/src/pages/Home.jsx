@@ -20,7 +20,7 @@ function Home() {
     if (!roomId.trim()) return setMessage("Please enter a Room ID");
 
     try {
-      const res = await fetch("http://https://collab-code-platform-y9nt.onrender.com/api/rooms/create", {
+      const res = await fetch("https://collab-code-platform-y9nt.onrender.com/api/rooms/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -45,7 +45,7 @@ function Home() {
     if (!roomId.trim()) return setMessage("Please enter a Room ID");
 
     try {
-      const res = await fetch("http://https://collab-code-platform-y9nt.onrender.com/api/rooms/join", {
+      const res = await fetch("https://collab-code-platform-y9nt.onrender.com/api/rooms/join", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ roomId }),
